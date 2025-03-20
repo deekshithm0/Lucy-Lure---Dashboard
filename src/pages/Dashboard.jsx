@@ -17,8 +17,8 @@ const Dashboard = () => {
           <div className='w-4/6 flex flex-col gap-4'>
             <StaticCard />
             <div className='w-full h-2/5 flex gap-6 mt-6'>
-              <Card title='Total Products' value='1,134' change={10} />
-              <Card title='Total Earnings' value='$4,231' change={-22} />
+              <Card title='Total Products' value1='1,134' change1={10} />
+              <Card title='Total Earnings' value1='$4,231' change1={-22} />
             </div>
           </div>
           <div className="w-2/6 h-full">
@@ -29,7 +29,7 @@ const Dashboard = () => {
           {/* chart card */}
           <Chart />
           <div className='w-2/6 h-full flex items-center justify-center'>
-            <Card title='Balances' value='$537' change={5} />
+            <Card title='Balances' value1='$537' value2='$234' change1={5} change2={-3} showButton={true} />
           </div>
         </div>
       </div>
