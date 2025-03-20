@@ -6,6 +6,26 @@ import StaticCard from '../components/StaticCard'
 import Card from '../components/Card'
 import Chart from '../components/Chart'
 
+
+const productGraphData = [
+  { month: 'Jan', value: 500 },
+  { month: 'Feb', value: 700 },
+  { month: 'Mar', value: 1200 },
+  { month: 'Apr', value: 900 },
+  { month: 'May', value: 1500 },
+  { month: 'Jun', value: 1134 }
+]
+
+const earningsGraphData = [
+  { month: 'Jan', value: 3000 },
+  { month: 'Feb', value: 3500 },
+  { month: 'Mar', value: 4000 },
+  { month: 'Apr', value: 4200 },
+  { month: 'May', value: 4100 },
+  { month: 'Jun', value: 4231 }
+]
+
+
 const Dashboard = () => {
   return (
     <div className='dashboard'>
@@ -17,8 +37,8 @@ const Dashboard = () => {
           <div className='w-4/6 flex flex-col gap-4'>
             <StaticCard />
             <div className='w-full h-2/5 flex gap-6 mt-6'>
-              <Card title='Total Products' value1='1,134' change1={10} />
-              <Card title='Total Earnings' value1='$4,231' change1={-22} />
+              <Card title='Total Products' value1='1,134' change1={10} graphData={productGraphData} color="#4CAF50" />
+              <Card title='Total Earnings' value1='$4,231' change1={-22} graphData={earningsGraphData} color="#FF5733" />
             </div>
           </div>
           <div className="w-2/6 h-full">
