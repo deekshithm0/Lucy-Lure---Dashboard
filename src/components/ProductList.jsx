@@ -1,14 +1,6 @@
 import React from 'react'
 import { FaAngleRight } from 'react-icons/fa'
-
-
-const products = [
-  { name: 'Niky - Icon 3D Pack', category: '3D Illustrations', image: '/arrow.png' },
-  { name: 'Lika - 3D Abstract', category: '3D Illustrations', image: '/arrow.png' },
-  { name: 'Cube 3D', category: '3D Illustrations',image: '/arrow.png' },
-  { name: 'Heady - 3D Head', category: '3D Illustrations', image: '/arrow.png' },
-  { name: 'Astro Illustrations', category: 'Illustrations', image: '/arrow.png' }
-]
+import { products } from '../data/Data'
 
 const ProductList = () => {
   return (
@@ -24,7 +16,11 @@ const ProductList = () => {
             className=' py-2 flex items-center gap-4 justify-between'
           >
             <div className='flex gap-4'>
-              <img src={product.image} alt={product.name} className='w-9 h-9 bg-blue-100 rounded-md' />
+              <img
+                src={product.image}
+                alt={product.name}
+                className='w-9 h-9 bg-blue-100 rounded-md'
+              />
               <div>
                 <h4 className='text-sm font-semibold'>{product.name}</h4>
                 <p className='text-xs text-gray-500'>{product.category}</p>

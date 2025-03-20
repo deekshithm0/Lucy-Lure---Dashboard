@@ -1,4 +1,5 @@
 import React from 'react'
+import { data } from '../data/Data'
 import {
   LineChart,
   Line,
@@ -7,15 +8,6 @@ import {
   Tooltip,
   ResponsiveContainer
 } from 'recharts'
-
-const data = [
-  { name: 'Mon', value: 100 },
-  { name: 'Tue', value: 200 },
-  { name: 'Wed', value: 150 },
-  { name: 'Thu', value: 250 },
-  { name: 'Fri', value: 300 },
-  { name: 'Sat', value: 350 }
-]
 
 const Chart = () => {
   return (

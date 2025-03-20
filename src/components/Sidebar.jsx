@@ -1,22 +1,5 @@
 import React from 'react'
-import {
-  FaBoxes,
-  FaChartPie,
-  FaClock,
-  FaMoneyBill,
-  FaFileInvoice,
-  FaCog
-} from 'react-icons/fa'
-
-const menuItems = [
-  { name: 'Overview', icon: <FaChartPie /> },
-  { name: 'Products', icon: <FaBoxes /> },
-  { name: 'Campaigns', icon: <FaClock /> },
-  { name: 'Schedules', icon: <FaClock /> },
-  { name: 'Payouts', icon: <FaMoneyBill /> },
-  { name: 'Statements', icon: <FaFileInvoice /> },
-  { name: 'Settings', icon: <FaCog /> }
-]
+import { menuItems } from '../data/Data'
 
 const Sidebar = () => {
   return (
@@ -32,11 +15,19 @@ const Sidebar = () => {
             className='flex items-center gap-2 mt-4 p-2 hover:bg-blue-100 rounded'
           >
             <div className='flex gap-10 items-center text-white hover:text-blue-800'>
-              {item.icon} {item.name}
+              <item.icon /> {item.name}
             </div>
           </li>
         ))}
       </ul>
+      <div className='w-full h-44 rounded-md flex flex-col items-center justify-center gap-4 bg-blue-400/50'>
+        <p className='text-center'>
+          Lorem Ipsum is a placeholder text used in design and publishing.
+        </p>
+        <button className='w-4/5 h-12 bg-green-500 text-white rounded-md '>
+          Apply Here
+        </button>
+      </div>
     </div>
   )
 }
