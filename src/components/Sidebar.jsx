@@ -20,11 +20,11 @@ const Sidebar = () => {
           </li>
         ))}
       </ul>
-      <div className='w-full h-44 rounded-md flex flex-col items-center justify-center gap-4 bg-blue-400/50'>
+      <div className='w-full h-40 mt-6 rounded-md flex flex-col items-center justify-center gap-4 bg-blue-400/50'>
         <p className='text-center'>
           Lorem Ipsum is a placeholder text used in design and publishing.
         </p>
-        <button className='w-4/5 h-12 bg-green-500 text-white rounded-md '>
+        <button className='w-4/5 h-10 bg-green-500 text-white rounded-md '>
           Apply Here
         </button>
       </div>
