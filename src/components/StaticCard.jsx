@@ -3,7 +3,7 @@ import img1 from "../assets/images/img1.avif";
 
 const StaticCard = () => {
   return (
-    <div className="h-1/2 bg-amber-800 flex items-center justify-center overflow-hidden rounded-2xl relative">
+    <div className="h-1/2 flex items-center justify-center overflow-hidden rounded-2xl relative">
       <img src={img1} alt="Static Card" className="w-full h-full object-cover" />
       <div className="">
         <h1 className="absolute text-white left-4 top-6 text-2xl ">Want some EXTRA <br /> Money?</h1>

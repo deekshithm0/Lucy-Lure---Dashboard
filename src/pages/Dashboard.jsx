@@ -28,7 +28,7 @@ const Dashboard = () => {
         <div className='w-full h-2/7 flex flex-row gap-4'>
           {/* chart card */}
           <Chart />
-          <div className='w-2/6 h-full'>
+          <div className='w-2/6 h-full flex items-center justify-center'>
             <Card title='Balances' value='$537' change={5} />
           </div>
         </div>

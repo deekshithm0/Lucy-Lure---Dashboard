@@ -2,5 +2,5 @@
 
 
 .dashboard{
-  @apply flex w-screen h-screen bg-blue-200 items-center justify-center p-6
+  @apply flex w-screen h-screen bg-blue-50 items-center justify-center p-6
 }
