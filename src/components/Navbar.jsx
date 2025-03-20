@@ -2,8 +2,10 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <div className='w-full h-1/7 bg-white'>Navbar</div>
   )
 }
 
 export default Navbar
+
+
