@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+
+.dashboard{
+  @apply flex w-screen h-screen bg-red-500 items-center justify-center p-6
+}
