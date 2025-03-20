@@ -29,7 +29,7 @@ const Card = ({
         <FaEllipsisV className='text-gray-400 cursor-pointer hover:text-gray-600' />
       </div>
 
-      <div className=' w-full flex justify-between pt-4 px-2'>
+      <div className=' w-full flex flex-row justify-between pt-4 px-2'>
         <div className='w-3/4 flex flex-col gap-4'>
           <p className='text-2xl font-bold'>{value1}</p>
           <p
@@ -42,7 +42,7 @@ const Card = ({
         </div>
 
         {value2 && (
-          <div>
+          <div className='w-3/4 flex flex-col gap-4 items-end pr-4'>
             <p className='text-2xl font-bold'>{value2}</p>
             <p
               className={`text-sm ${
